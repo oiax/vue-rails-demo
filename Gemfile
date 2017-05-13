@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'jbuilder', '~> 2.5'
 
+gem 'font-awesome-rails'
 gem 'webpacker'
 
 group :development, :test do
