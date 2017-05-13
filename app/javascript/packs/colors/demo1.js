@@ -3,7 +3,7 @@ import ColorSelector from "../../components/color_selector.vue"
 
 document.addEventListener("DOMContentLoaded", () => {
   new Vue({
-    el: "#demo1",
+    el: "#color-selector",
     template: "<ColorSelector/>",
     components: { ColorSelector }
   })
