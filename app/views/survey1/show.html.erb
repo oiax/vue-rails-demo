@@ -5,38 +5,37 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <div id="survey-form">
-      <form>
+      <%= form_with model: @questionnaire, url: :survey1 do |f| %>
         <div class="form-group">
-          <label for="user-name">お名前</label>
-          <input type="text" name="user[name]" id="user-name"
-            class="form-control" style="width: 300px"
-            v-model="user.name">
+          <%= f.label :name, "お名前" %>
+          <%= f.text_field :name, class: "form-control", style: "width: 300px",
+            "v-model" => "user.name" %>
         </div>
         <div class="form-group">
-          <label for="user-name">もっとも得意なプログラミング言語</label>
+          <%= f.label :language, "もっとも得意なプログラミング言語" %>
           <div>
             <label>
-              <input type="radio" name="user[language]" id="user-language"
-                v-model="user.language" value="ruby"> Ruby
+              <%= f.radio_button :language, "ruby",
+                "v-model" => "user.language" %> Ruby
             </label>
             <label>
-              <input type="radio" name="user[language]" id="user-language"
-                v-model="user.language" value="php"> PHP
+              <%= f.radio_button :language, "php",
+                "v-model" => "user.language" %> PHP
             </label>
             <label>
-              <input type="radio" name="user[language]" id="user-language"
-                v-model="user.language" value="other"> その他
+              <%= f.radio_button :language, "other",
+                "v-model" => "user.language" %> その他
             </label>
           </div>
         </div>
-        <div class="form-group" v-show="user.language === 'other'">
-          <label for="user-other-language">（具体的に）</label>
-          <input type="text" name="user[other_language]" id="user-language"
-            style="display: inline; width: auto"
-            class="form-control" v-model="user.other_language">
+        <div class="form-group" v-show="user.language === 'other'" v-cloak>
+          <%= f.label :other_language, "（具体的に）" %>
+          <%= f.text_field :other_language,
+            style: "display: inline; width: auto", class: "form-control",
+            "v-model" => "user.other_language" %>
         </div>
         <button type="submit" class="btn btn-primary">送信</button>
-      </form>
+      <% end %>
     </div>
   </div>
 </div>
