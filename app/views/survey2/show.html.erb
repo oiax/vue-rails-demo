@@ -4,7 +4,7 @@
 
 <div class="panel panel-default">
   <div class="panel-body">
-    <div id="survey-form">
+    <div id="survey-form" v-cloak>
       <%= form_with model: @questionnaire, url: :survey2 do |f| %>
         <div class="form-group">
           <%= f.label :name, "お名前" %>
@@ -28,7 +28,7 @@
             </label>
           </div>
         </div>
-        <div class="form-group" v-show="user.language === 'other'" v-cloak>
+        <div class="form-group" v-show="user.language === 'other'">
           <%= f.label :other_language, "（具体的に）" %>
           <%= f.text_field :other_language,
             style: "display: inline; width: auto", class: "form-control",
