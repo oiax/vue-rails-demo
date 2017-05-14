@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   get "colors/demo1", as: :colors_demo1
 
   get "survey0" => "survey0#show", as: :survey0
-  post "survey0" => "survey0#create"
+
+  get "survey1" => "survey1#show", as: :survey1
+  post "survey1" => "survey1#create"
 end
