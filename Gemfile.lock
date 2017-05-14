@@ -120,6 +120,9 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    vue-rails-form-builder (0.6.0)
+      actionview (>= 4.2, < 6)
+      railties (>= 4.2, < 6)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -146,6 +149,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  vue-rails-form-builder
   web-console (>= 3.3.0)
   webpacker
 
