@@ -2,8 +2,8 @@
   <h1>Survey ver. 2</h1>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-body">
+<div class="card">
+  <div class="card-body">
     <div id="survey-form" v-cloak>
       <%= vue_form_with model: @questionnaire, url: :survey2,
         vue_scope: "user" do |f| %>
