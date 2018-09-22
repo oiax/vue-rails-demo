@@ -11,7 +11,7 @@ gem 'puma', '~> 3.7'
 gem 'jbuilder', '~> 2.5'
 
 gem 'font-awesome-rails'
-gem 'webpacker'
+gem 'webpacker', '~> 1.2'
 gem 'vue-rails-form-builder'
 
 group :development, :test do
