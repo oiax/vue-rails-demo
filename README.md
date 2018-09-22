@@ -15,4 +15,4 @@ bin/rake db:setup
 
 ## ライセンス
 
-The `vue-rails-demo` is distributed under the MIT license. ([MIT-LICENSE](https://github.com/oiax/initial-test-data/blob/master/MIT-LICENSE))
+The `vue-rails-demo` is distributed under the MIT license. ([MIT-LICENSE](MIT-LICENSE))
